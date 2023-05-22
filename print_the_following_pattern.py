@@ -1,4 +1,10 @@
 n=int(input())
-a="x"*n
-for i in range(1,n+1):
-    print(a[:i-1]+"0"+a[i:])
+a=0
+for i in range(n):
+    if (i==0):
+        print("*")
+    elif(i==n-1):
+        print("*"*n)
+    else:
+        print("*"+" "*(a)+"*")
+        a+=1
