@@ -1,10 +1,10 @@
 n=int(input())
-a=0
-for i in range(n):
-    if (i==0):
-        print("*")
-    elif(i==n-1):
-        print("*"*n)
+left_spaces=0
+right_spaces=(n-3)
+for i in range(1,n+1):
+    if(i==1 or i==n):
+        print("* "+"  "*(n-2)+"* ")
     else:
-        print("*"+" "*(a)+"*")
-        a+=1
+        print("* "+("  "*left_spaces)+"* "+("  "*right_spaces)+"* ")
+        left_spaces+=1
+        right_spaces-=1
