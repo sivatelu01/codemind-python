@@ -6,4 +6,3 @@ for i in range(1,length_string):
     if large<a:
         large=a
 print(chr(large))
-    
